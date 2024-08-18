@@ -1,0 +1,125 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        gap: 30px;
+        padding: 0 30px;
+        justify-content: center;
+        margin: 0;
+        background-color: #000000;
+      }
+      header {
+        position: sticky;
+        max-height: 600px;
+        top: 0;
+        background-color: #1d1d1e;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 25px;
+        text-align: left;
+        margin-top: 68px;
+        width: 30%;
+      }
+      section {
+        color: #fff;
+        width: 70%;
+      }
+      .project_list {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .project_header {
+        display: flex;
+      }
+      .project_detail {
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+      }
+      .project-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+      .project-image.image-error {
+        background-color: #fff;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+      .project_card {
+        min-width: 800px;
+        background-color: #1d1d1e;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: left;
+        margin-bottom: 20px; /* Adds space between cards */
+      }
+      .project_links {
+        background-color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      .project_links a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: medium;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="border: 1px solid #3498db;">
+      <img src="https://avatars.githubusercontent.com/u/79948273?v=4" alt="" style="width:150px; height:150px; border-radius: 50%;">
+      <h1>iqrapal</h1>
+      <p></p>
+      <a href="" target="_blank">Blog</a>
+    </header>
+    <section>
+      <h1 class="project_title">Projects</h1>
+      <div class="project_list">
+        
+          <div class="project_card" style="border: 1px solid #3498db;">
+            <div class="project_header">
+              <img class="project-image" src="https://picsum.photos/200" alt="" onerror="this.onerror=null; this.src='default-avatar.png';">
+              <div class="project_detail">
+                <h3 class="project_name">path-pilot-pc</h3>
+                <p class="project_description"></p>
+              </div>
+            </div>
+            <a class="project_links" href="https://github.com/chillaah/path-pilot-pc" target="_blank">View Project</a>
+          </div>
+        
+          <div class="project_card" style="border: 1px solid #3498db;">
+            <div class="project_header">
+              <img class="project-image" src="https://picsum.photos/200" alt="" onerror="this.onerror=null; this.src='default-avatar.png';">
+              <div class="project_detail">
+                <h3 class="project_name">discord-bot-v3</h3>
+                <p class="project_description"></p>
+              </div>
+            </div>
+            <a class="project_links" href="https://github.com/codenetwork/discord-bot-v3" target="_blank">View Project</a>
+          </div>
+        
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+  </html>
+  
